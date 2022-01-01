@@ -1,6 +1,8 @@
 class HomeController < ApplicationController
   before_action :authenticate_user!
   def index
-    @name = user_signed_in? ? current_user.name : "Visitante"
+    @acc = current_user.acc
+    @name = current_user.name
+    @msg = current_user.msg
   end
 end
