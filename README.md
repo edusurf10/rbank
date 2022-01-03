@@ -1,24 +1,50 @@
-# README
+# Aplicação para login customizado com devise
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+Rodando aplicação:
 
-* System dependencies
+* Clonar o repositorio 
 
-* Configuration
+```
+git clone https://gitlab.com/tutoriais.gamehelp/rbank.git
+```
 
-* Database creation
+* Acessar a pasta do repositorio
 
-* Database initialization
+```
+cd rbank
+```
 
-* How to run the test suite
+* Instalar as gems utilizadas
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle install
+```
 
-* Deployment instructions
+* Criar o banco de dados (_configurar o banco de dados no projeto antes_)
 
-* ...
+```
+rails db:create
+```
+
+* Rodar a migração
+
+```
+rails db:migrate
+```
+
+* Iniciar o servidor
+
+```
+rails s
+```
+
+* Acessar a aplicação no endereço padrão
+
+```
+localhost:3000
+```
+
+* Para criar uma conta e testar, você deve cadastrar pelo outro sistema, _rgerencial_
+
